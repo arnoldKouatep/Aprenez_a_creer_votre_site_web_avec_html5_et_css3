@@ -1,0 +1,19 @@
+h1 {
+    border: 3px blue double;
+}
+
+/* p {
+    border-left: 2pc solid black;
+    border-right: 2px solid black;
+} */
+
+p {
+    border: 3px blue double;
+    border-radius: 20px / 10px;
+}
+
+p {
+    /* ombres */
+    box-shadow: 6px 6px 6px black inset;
+    text-shadow: 2px 2px 4px black;
+}

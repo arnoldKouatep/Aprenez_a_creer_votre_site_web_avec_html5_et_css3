@@ -1,0 +1,27 @@
+a /* Liens par défaut (non survolés) */
+{
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+    text-decoration: underline;
+    color: green;
+}
+
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+}
+
+a:focus /* Quand le visiteur selectionne le lien */
+{
+    background-color: #FFCC66;
+}
+
+a:visited /* Quand le visiteur a deje vu la page concernee */
+{
+    color: AAA;
+}
