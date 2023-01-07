@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les Formulaires</title>
+</head>
+<body>
+    <p>Texte avant le formulaire</p>
+
+    <form method="post" action="taitement.py">
+        <p>Texte a l'interieur du formulaire</p>
+        <p>
+            <!-- Les zones de saisie monolignes -->
+            <label for="pseudo">Votre pseudo :</label> 
+            <input type="text" name="pseudo" id="pseudo" placeholder="Ex :Zozor" size="30" maxlength="10" />
+
+            <br />
+            <label for="pass">Votre mot de passe :</label>
+            <input type="password" name="pass" id="pass" />
+
+            <!-- Les zones de saisie multilignes -->
+            <br />
+            <label for="ameliorer">Comment pensez-vous que je pourrais ameliorer mon site ?</label>
+            
+            <br />
+            <textarea name="ameliorer" id="ameliorer" cols="50" rows="10">
+                Ameliorer ton site ?!
+                Mais enfin ! Il est tellement genialissime qu'il n'est pas necessaire de l'ameliorer !
+            </textarea>
+            <!-- Les zones de saisie enrichies -->
+            <br />
+            <label for="email">Votre E-mail :</label>
+            <input type="email" name="eamail" id="email">
+
+            <br />
+            <label for="url">Veillez entrer votre url : </label>
+            <input type="url" name="url" id="url">
+
+            <br />
+            <input type="tel"></code>
+
+            <br />
+            <input type="tel" min="5" max="100" step="5">
+
+            <br />
+            <label> Curseur :</label>
+            <input type="range" />
+
+            <br />
+            <label> Couleur :</label>
+            <input type="color" />
+
+            <br />
+            <label>Date :</label>
+            <input type="date" />
+
+            <br />
+            <label>Recherche :</label>
+            <input type="search" />
+        </p>
+
+        <!-- Cases a cocher -->
+        <p>
+            Cochez les aliments que vous aimez manger : <br />
+            <input type="checkbox" name="frites" id="frites" checked /><label for="frites">Frites</label><br />
+            <input type="checkbox" name="steak" id="steak" /><label for="steak">Steak hache</label><br />
+            <input type="checkbox" name="epinards" id="epinards" /><label for="epinards">Epinards</label><br />
+            <input type="checkbox" name="huitres" id="huitres" /><label for="huitres">Huitres</label><br />
+        </p>
+
+        <!-- Zones d'options -->
+        <p>
+            veuillez indiquer la tranche d'age dans laquelle ous vous situez :<br />
+            <input type="radio" name="age" value="moins15" id="moins15" /><label for="moins15">Moins de 15 ans</label><br />
+            <input type="radio" name="age" value="medium15-25" id="medium15-25" /><label for="medium15-25">15-25 ans</label><br />
+            <input type="radio" name="age" value="medium25-40" id="medium25-40" /><label for="medium25-40">25-40 ans</label><br />
+            <input type="radio" name="age" value="plus40" id="plus40" /><label for="plus40">Encore plus vieux que ca ?!</label>
+            <p>         
+                Sur quel continent habitez-vous ?<br />
+                <input type="radio" name="continent" value="europe" id="europe" />
+                <label for="europe">Europe</label><br />
+                <input type="radio" name="continent" value="afrique" id="afrique" />
+                <label for="afrique">Afrique</label><br />
+                <input type="radio" name="continent" value="asie" id="asie" />
+                <label for="asie">Asie</label><br />
+                <input type="radio" name="continent" value="amerique" id="amerique"
+                /> <label for="amerique">Amérique</label><br />
+                <input type="radio" name="continent" value="australie"
+                id="australie" /> <label for="australie">Australie</label>
+            </p>
+        </p>
+        <!-- Listes deroulantes -->
+        <p>
+            <label for="pays">Dans quel pays habitez-vous ?</label><br />
+            <select name="pays" id="pays">
+                <optgroup label="Afrique">
+                    <option value="cameroun" selected>Cameroun</option>
+                </optgroup>
+                <optgroup label="Afrique">   
+                    <option value="fance">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="Italie">Italie</option>
+                    <option value="royaume-uni">Royaume-Uni</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="canada">Canada</option>
+                    <option value="etats-unis">Etats-unis</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+                </optgroup>
+                
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" autofocus required/>
+            <label for="prenom">Quel est votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" required/>
+            <label for="email">Quel est votre e-mail ?</label>
+            <input type="email" name="email" id="email" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+            <p>
+            Faites un souhait que vous voudriez voir exaucé :
+                <input type="radio" name="souhait" value="riche" id="riche" />
+                <label for="riche">Etre riche</label>
+                <input type="radio" name="souhait" value="celebre" id="celebre"
+                /> <label for="celebre">Etre célèbre</label>
+                <input type="radio" name="souhait" value="intelligent"
+                id="intelligent" /> <label for="intelligent">Etre <strong>encore</strong>
+                plus intelligent</label>
+                <input type="radio" name="souhait" value="autre" id="autre" />
+                <label for="autre">Autre...</label>
+            </p>
+            <p>
+                <label for="precisions">Si "Autre", veuillez préciser :</label>
+                <textarea name="precisions" id="precisions" cols="40"
+                rows="4"></textarea>
+            </p>
+        </fieldset>
+        <!-- Bouton d'envoie -->
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <audio src="Musique/Lady-Ponce-ft-Roger-Noublie-pas_CRITIQSITE.COM_.mp3" controls></audio>
+    <p>Texte apres le formulaire</p>
+    
+</body>
+</html>

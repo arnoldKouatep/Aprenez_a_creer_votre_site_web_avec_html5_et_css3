@@ -1,0 +1,46 @@
+nav {
+    display: inline-block;
+    /* float: left; */
+    width: 150px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+section {
+    display: inline-block;
+    /* margin-left: 170px; */
+    border: 1px solid blue;
+    vertical-align: top;
+}
+
+a {
+    display: block;
+}
+
+/* .element {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.element2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+} */
+/* 
+.element {
+    position: fixed;
+    right: 0px;
+    bottom: 100px;
+} */
+
+strong{
+    background-color: red;
+    color: yellow;
+    position: relative;
+    left: 55px;
+    top: 10px;
+}

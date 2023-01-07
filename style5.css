@@ -1,0 +1,14 @@
+p  {
+    width: 250px;
+}
+
+p{
+    width: 350px;
+    /* height: 1000px; */
+    margin: auto;
+
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+}
